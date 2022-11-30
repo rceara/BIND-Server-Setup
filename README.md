@@ -180,6 +180,10 @@ Now that our server is configured lets go ahead and restart BIND.
 ```bash
 sudo systemctl restart named
 ```
+```bash
+systemctl restart bind9
+Systemctl status bind9
+```
 Please remember that if you have a NS2 server, you need to do the same configuration on your NS2 server as well. The only difference is that you will need to define the NS2 as slave. And also do the rest of the configuration for your hostname and /etc/resolv.conf, same as NS1.
 ```bash
 sudo apt update #Update your package repository
@@ -239,5 +243,9 @@ Now restart the BIND service:
 sudo named-checkconf
 sudo systemctl restart named
 sudo systemctl status named
+```
+```bash
+systemctl restart bind9
+Systemctl status bind9
 ```
 ## Done
