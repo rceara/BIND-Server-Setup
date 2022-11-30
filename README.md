@@ -127,10 +127,10 @@ myciscoserver.com.		IN	MX	10	mail.myciscoserver.com
 ; A records for domain names:
 collector1.myciscoserver.com.   IN	A	10.0.0.142
 collector1.myciscoserver.com.   IN	A	10.0.0.143
-collector1.myciscoserver.com.   IN           A        10.0.0.144
-wlc1.9840.myciscoserver.com.  IN	A	10.0.0.68
-radius.myciscoserver.com.       IN            A         10.0.0.141
-tacacs.myciscoserver.com.       IN           A          10.0.0.149
+collector1.myciscoserver.com.   IN      A       10.0.0.144
+wlc1.9840.myciscoserver.com.    IN	A	10.0.0.68
+radius.myciscoserver.com.       IN      A       10.0.0.141
+tacacs.myciscoserver.com.       IN      A       10.0.0.149
 ;
 ```
 Let's now create the reverse file:
@@ -159,9 +159,9 @@ $TTL    604800
 100      IN      PTR    ns1.myciscoserver.com.	; 10.0.0.1
 ;101     IN      PTR    ns2.myciscoserver.com.  ; 10.0.0.2
 142	 IN	 PTR	collector1.myciscoserver.com ; 10.0.0.142
-143  IN  PTR  collector1.myciscoserver.com ; 10.0.0.143
-144  IN  PTR  collector1.myciscoserver.com ; 10.0.0.144
-150  IN  PTR  wlc1.9840.myciscoserver.com ; 10.0.0.68
+143      IN      PTR    collector1.myciscoserver.com ; 10.0.0.143
+144      IN      PTR    collector1.myciscoserver.com ; 10.0.0.144
+150      IN      PTR    wlc1.9840.myciscoserver.com ; 10.0.0.68
 151	 IN	 PTR	radius.myciscoserver.com ; 10.93.178.141
 152	 IN	 PTR	tacacs.myciscoserver.com ; 10.93.178.149
 ```
