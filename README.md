@@ -2,7 +2,7 @@
 
 ## Setting up DNS Server and specific hostnames
 
-# The intention of this documentation is to define a FQDN so the Cisco Wireless LAN Controllers (WLCs) can send data to multiple IP collectors pointing to the same A record of the FQDN.
+# The intention of this documentation is to define a FQDN on the CISCO Wireless LAN Controllers (WLCs) can send data to multiple IP collectors pointing to the same A record of the FQDN.
 
 ## This guide is based on Ubuntu 22.04 distro. It should also work with any other distribution.
 
