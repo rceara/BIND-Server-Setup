@@ -2,6 +2,8 @@
 
 ## Setting up DNS Server and specific hostnames
 
+# The intention of this documentation is to define a FQDN so the Cisco Wireless LAN Controllers (WLCs) can send data to multiple IP collectors pointing to the same A record of the FQDN.
+
 ## This guide is based on Ubuntu 22.04 distro. It should also work with any other distribution.
 
 Before we start with the configuration of the DNS Server, please make sure you have the right IP Address and hostname defined for your DNS Server. We are also assuming on this guide that you have access to the Internet to download the package needed to run your DNS Server.
@@ -249,3 +251,4 @@ systemctl restart bind9
 Systemctl status bind9
 ```
 ## Done
+## Rafael Ceara
