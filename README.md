@@ -2,7 +2,7 @@
 
 ## Setting up DNS Server and specific hostnames
 
-# The intention of this documentation is to define a FQDN on the CISCO Wireless LAN Controllers (WLCs) that can point to multiple gRPC collectors. 3 IP Addresses with the same A record for DNS.
+# The intention of this documentation is to define a FQDN on the Cisco Wireless LAN Controllers (WLCs) that can point to multiple gRPC collectors. 3 IP Addresses with the same A record for DNS.
 
 ## This guide is based on Ubuntu 22.04 distro. It should also work with any other distribution.
 
