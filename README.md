@@ -74,7 +74,7 @@ Now let's work on the setup of our zones with our domain name: myciscoserver.com
 ```bash
 sudo vi /etc/bind/named.conf.local
 
-zone "amazonaccountteam.com" {
+zone "myciscoserver.com" {
     type master;
     file "/etc/bind/zones/db.fwd.myciscoserver.com"; # zone file path
     allow-transfer { 10.0.0.1; };           # ns1 private IP address. In case you have ns2 then you should define there your ns2 ip address instead.
@@ -123,7 +123,7 @@ $TTL    604800
 ns1.myciscoserver.com.          IN      A       10.0.0.1
 ;ns2.myciscoserver.com.         IN      A       10.0.0.2
 
-; Mail handler or MX record for the domain amazonaccountteam.com
+; Mail handler or MX record for the domain myciscoserver.com
 myciscoserver.com.		IN	MX	10	mail.myciscoserver.com
 
 ; A records for domain names:
