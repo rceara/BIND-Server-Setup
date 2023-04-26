@@ -76,14 +76,14 @@ sudo vi /etc/bind/named.conf.local
 
 zone "amazonaccountteam.com" {
     type master;
-    file "/etc/bind/zones/db.fwd.amazonaccountteam.com"; # zone file path
+    file "/etc/bind/zones/db.fwd.myciscoserver.com"; # zone file path
     allow-transfer { 10.0.0.1; };           # ns1 private IP address. In case you have ns2 then you should define there your ns2 ip address instead.
 };
 
 
 zone "10.0.0.in-addr.arpa" {
     type master;
-    file "/etc/bind/zones/db.rev.amazonaccountteam.com";  # 10.0.0.0/24 subnet
+    file "/etc/bind/zones/db.rev.myciscoserver.com";  # 10.0.0.0/24 subnet
     allow-transfer { 10.0.0.1; };  # ns1 private IP address. In case you have ns2 then you should define there your ns2 ip address instead.
 };
 //
